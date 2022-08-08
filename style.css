@@ -46,10 +46,23 @@ main {
   box-shadow: 0 0 25px 0 hsl(218.8, 14.8%, 80.9%);
 }
 
+main>div {
+  width: 288px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 main img {
   width: 288px;
   aspect-ratio: 1;
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+main img:hover {
+  transform: scale(1.2);
 }
 
 h1 {
